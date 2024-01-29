@@ -29,8 +29,20 @@ export type DetailsPageProps = NativeStackScreenProps<
 
 const RootStack = () => {
   return (
-    <Stack.Navigator>
-      <Stack.Screen name="Home" component={HomeScreen} />
+    <Stack.Navigator
+      screenOptions={{
+        headerStyle: {
+          backgroundColor: "#1c357f",
+        },
+        headerTintColor: "#fff",
+        headerTitleAlign: "center",
+      }}
+    >
+      <Stack.Screen
+        name="Home"
+        component={HomeScreen}
+        options={{ title: "HomePage" }}
+      />
       <Stack.Screen name="Feed" component={FeedScreen} />
       <Stack.Screen name="Profile" component={ProfileScreen} />
       <Stack.Screen name="Details" component={DetailsScreen} />

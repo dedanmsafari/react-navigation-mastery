@@ -5,7 +5,7 @@ import { HomePageProps } from "../navigation/RootStack";
 const HomeScreen = ({ navigation }: HomePageProps) => {
   return (
     <View>
-      <Button title="Home" onPress={() => navigation.navigate("Feed")} />
+      <Button title="Feed" onPress={() => navigation.navigate("Feed")} />
     </View>
   );
 };
